@@ -1,0 +1,21 @@
+{
+  "name": "life_during_lockdown",
+  "version": "1.0.0",
+  "description": "An honest and dedicated effort awating since long time",
+  "scripts": {
+    "install": "npm run build-all",
+    "next": "npm run build-firebase && cd \"src/functions\" && npm install",
+    "preserve": "npm run build-all",
+    "serve": "cd \"src/functions\" && npm run serve",
+    "predeploy": "npm run build-all",
+    "deploy": "npm run build-all && firebase deploy --only functions,hosting",
+    "clean-all": "cd \"src/functions\" && rm -rf next lib",
+    "build-all": "npm run clean-all && npm run build-next && npm run build-firebase",
+    "build-next": "cd \"src/functions\" && npm install && npm run build",
+    "build-firebase": "cd \"src/functions\" && npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

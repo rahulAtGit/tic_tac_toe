@@ -1,0 +1,56 @@
+.ttt {
+  min-height: 100vh;
+  overflow: scroll;
+  &__header {
+    font-family: "Laila", serif;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
+    color: #2f4858;
+  }
+
+  &__difficulty-level {
+    display: flex;
+    justify-content: center;
+  }
+  &__level-input {
+    font-size: 1.25em;
+    padding: 0.4em;
+    background-color: inherit;
+    border-radius: 4px;
+    border: 1px solid #c8d2d1;
+    width: 68%;
+    max-width: 280px;
+    color: #506973;
+    margin-right: 8px;
+
+    &::placeholder {
+      font-weight: 300;
+      color: #c8d2d1;
+    }
+
+    &:focus {
+      border: 1px solid #c8d2d1;
+      outline: none;
+    }
+  }
+  &__play {
+    font-size: 1.25em;
+    padding: 0.4em 1em;
+    background-color: #506973;
+    color: #f4f7f6;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid #c8d2d1;
+    width: 24%;
+    max-width: 100px;
+    cursor: pointer;
+  }
+
+  &__info {
+    color: #506973;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+  }
+}
